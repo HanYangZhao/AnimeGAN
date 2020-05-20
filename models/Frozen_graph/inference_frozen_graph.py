@@ -6,9 +6,8 @@ from tqdm import tqdm
 from glob import glob
 import time
 import numpy as np
-from net import generator
-from utils import *
-
+import generator
+import utils
 
 def infer(model_filepath,test_dir,output_dir,img_size=[256,256]):
     '''
@@ -73,3 +72,6 @@ if __name__ == '__main__':
     arg = parse_args()
     # Initialize the model
     infer(arg.model_path,arg.test_dir,arg.output_dir)
+
+
+
