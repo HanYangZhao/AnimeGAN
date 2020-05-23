@@ -6,7 +6,6 @@ import time
 import numpy as np
 import sys
 sys.path.append("../../")
-from net import generator
 from utils import *
 from werkzeug.utils import secure_filename
 import uuid as unique_id
