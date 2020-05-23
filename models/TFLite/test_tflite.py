@@ -5,7 +5,7 @@ import sys
 import traceback
 # Load TFLite model and allocate tensors.f
 try:
-	interpreter = tf.lite.Interpreter(model_path="mobilenet.tflite")
+	interpreter = tf.lite.Interpreter(model_path="hayao_epoch60.tflite")
 	interpreter.allocate_tensors()
 	# Get input and output tensors.
 	input_details = interpreter.get_input_details()
